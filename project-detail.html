@@ -7,48 +7,59 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-900 text-gray-200 font-sans">
     <div class="flex min-h-screen">
         <!-- Sidebar -->
-        <section class="w-1/4 bg-gray-100 p-4">
-            <div class="mb-4">
-                <h2 class="text-lg font-semibold">Apps</h2>
+        <section class="w-1/4 bg-gray-800 p-6 shadow-lg flex flex-col">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-white">Apps</h2>
             </div>
-            <div class="mb-4">
-                <h3 class="text-md font-semibold">Workspace</h3>
-                <button class="w-full text-left bg-blue-200 p-2 rounded">My Workspace</button>
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-400">Workspace</h3>
+                <button
+                    class="w-full text-left bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-500 transition duration-300">My
+                    Workspace</button>
             </div>
-            <div class="mb-4">
-                <h3 class="text-md font-semibold">Menu</h3>
-                <button class="w-full text-left bg-blue-200 p-2 rounded mb-2 flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-400">Menu</h3>
+                <button
+                    class="w-full text-left bg-gray-700 text-gray-300 p-3 rounded-lg mb-3 flex items-center gap-2 hover:bg-gray-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="M9 7.75A.75.75 0 0 1 9.75 7h4a.75.75 0 0 1 0 1.5h-4A.75.75 0 0 1 9 7.75M9.75 13a.75.75 0 0 0 0 1.5h4a.75.75 0 0 0 0-1.5zm-1-3a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zM2 4.5A1.5 1.5 0 0 1 3.5 3h17a1.5 1.5 0 0 1 .5 2.915v7.335A3.75 3.75 0 0 1 17.25 17h-4.5v2.5h3.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5h3.5V17h-4.5A3.75 3.75 0 0 1 3 13.25V5.915A1.5 1.5 0 0 1 2 4.5M19.5 6h-15v7.25a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25z" />
-                    </svg>Project</button>
-                <button class="w-full text-left p-2 rounded flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                    </svg>Project
+                </button>
+                <button
+                    class="w-full text-left bg-gray-700 text-gray-300 p-3 rounded-lg mb-3 flex items-center gap-2 hover:bg-gray-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
                         <rect width="39" height="31.2" x="4.5" y="8.4" fill="none" stroke="currentColor"
                             stroke-linecap="round" stroke-linejoin="round" rx="4" ry="4" />
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             d="m10.236 16.543l1.714-2.967l1.713 2.967m.001 2.403l-1.714 2.969l-1.714-2.969m0 10.088l1.714-2.967l1.713 2.967m.001 2.403l-1.714 2.969l-1.714-2.969m7.687-17.861h21.11m-.001 4.169H21.648m3.725 4.17h13.66m-21.11 4.17h21.11m-.001 4.17H21.648m3.725 4.169h13.66" />
-                    </svg>Lesson Learned</button>
+                    </svg>Lesson Learned
+                </button>
             </div>
-            <div class="mb-4">
-                <h3 class="text-md font-semibold ">Master Data</h3>
-                <button class="w-full text-left p-2 rounded mb-2 flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-400">Master Data</h3>
+                <button
+                    class="w-full text-left bg-gray-700 text-gray-300 p-3 rounded-lg mb-3 flex items-center gap-2 hover:bg-gray-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-width="2"
                             d="M2 3.99C2 2.892 2.898 2 3.99 2h16.02C21.108 2 22 2.898 22 3.99v16.02c0 1.099-.898 1.99-1.99 1.99H3.99A1.995 1.995 0 0 1 2 20.01zM12 10v8m0-12v2" />
-                    </svg>Status</button>
-                <button class="w-full text-left p-2 rounded mb-2 flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                    </svg>Status
+                </button>
+                <button
+                    class="w-full text-left bg-gray-700 text-gray-300 p-3 rounded-lg mb-3 flex items-center gap-2 hover:bg-gray-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
                         <path fill="currentColor"
                             d="M23.981 24.433A3.96 3.96 0 0 0 26 25a4.005 4.005 0 0 0 4-4a4 4 0 0 0-.15-1.023l-2.436 2.437a2 2 0 1 1-2.828-2.828l2.437-2.437A4 4 0 0 0 26 17a4.005 4.005 0 0 0-4 4a3.95 3.95 0 0 0 .567 2.02L17 28.585L18.414 30Z" />
                         <path fill="currentColor" fill-rule="evenodd"
                             d="M26 4h-4V2h-2v2h-8V2h-2v2H6a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h8v-2H6V6h4v2h2V6h8v2h2V6h4v8h2V6a2 2 0 0 0-2-2" />
-                    </svg>Material</button>
-                <button class="w-full text-left p-2 rounded flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                    </svg>Material
+                </button>
+                <button
+                    class="w-full text-left bg-gray-700 text-gray-300 p-3 rounded-lg mb-3 flex items-center gap-2 hover:bg-gray-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
                         <g fill="none">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
                                 d="M24 40H7a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v12.059" />
@@ -60,7 +71,8 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
                                 d="M37 41v-4m0-6v-4m-6.062 10.5l3.464-2m5.196-3l3.464-2m-12.124 0l3.464 2m5.196 3l3.464 2" />
                         </g>
-                    </svg>Project Type</button>
+                    </svg>Project Type
+                </button>
             </div>
             <div class="mt-auto">
                 <button class="flex items-center p-2 rounded">
@@ -71,7 +83,7 @@
         </section>
 
         <!-- Main Content -->
-        <section class="w-3/4 flex flex-col gap-5 p-4 ">
+        <section class="w-3/4 flex flex-col gap-5 p-4">
             <section class="flex flex-row items-center gap-1">
                 <span class="text-blue-500 cursor-pointer">Projects</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"
@@ -87,23 +99,22 @@
                 </svg>
                 <span>Penambahan Sumur dan Pompa</span>
             </section>
-            <div class="flex flex-col w-full bg-white shadow rounded p-4">
-
+            <div class="flex flex-col w-full bg-gray-800 shadow rounded p-4">
                 <!-- Tabs -->
                 <section class="flex w-full justify-between items-center mb-4">
-                    <div class="border-b border-gray-200">
+                    <div class="border-b border-gray-700">
                         <ul class="flex space-x-4">
                             <li>
                                 <a href="workorder-list.html"
-                                    class="inline-block py-2 px-4 text-gray-500 hover:text-blue-500">Work
-                                    Order</a>
+                                    class="inline-block py-2 px-4 text-gray-400 hover:text-blue-500">Work Order</a>
                             </li>
                             <li>
-                            <li>
-                                <a href="#" class="inline-block py-2 px-4 text-gray-500 hover:text-blue-500">Project
+                                <a href="#" class="inline-block py-2 px-4 text-gray-400 hover:text-blue-500">Project
                                     Health</a>
                             </li>
-                            <a href="#" class="inline-block py-2 px-4 text-gray-500 hover:text-blue-500">Cash Flow</a>
+                            <li>
+                                <a href="#" class="inline-block py-2 px-4 text-gray-400 hover:text-blue-500">Cash
+                                    Flow</a>
                             </li>
                             <li>
                                 <a href="workorder-detail.html"
@@ -113,7 +124,7 @@
                     </div>
                 </section>
                 <div class="flex flex-col">
-                    <h1 class="text-xl font-semibold mb-4">Project Info</h1>
+                    <h1 class="text-xl font-semibold mb-4 text-gray-200">Project Info</h1>
                     <table class="table-auto w-full">
                         <colgroup>
                             <col style="width: 20%;">
@@ -121,60 +132,60 @@
                         </colgroup>
                         <tbody>
                             <tr>
-                                <td class="font-semibold p-2 border">Project</td>
-                                <td class="p-2 border">Rehabilitasi Pos Pantau Palopo</td>
+                                <td class="font-semibold p-2 border border-gray-700">Project</td>
+                                <td class="p-2 border border-gray-700">Rehabilitasi Pos Pantau Palopo</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Amount</td>
-                                <td class="p-2 border">-</td>
+                                <td class="font-semibold p-2 border border-gray-700">Amount</td>
+                                <td class="p-2 border border-gray-700">-</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Location</td>
-                                <td class="p-2 border">-</td>
+                                <td class="font-semibold p-2 border border-gray-700">Location</td>
+                                <td class="p-2 border border-gray-700">-</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Customer</td>
-                                <td class="p-2 border">Kemenhub</td>
+                                <td class="font-semibold p-2 border border-gray-700">Customer</td>
+                                <td class="p-2 border border-gray-700">Kemenhub</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Project Manager</td>
-                                <td class="p-2 border">-</td>
+                                <td class="font-semibold p-2 border border-gray-700">Project Manager</td>
+                                <td class="p-2 border border-gray-700">-</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Project Type</td>
-                                <td class="p-2 border">Operation & Maintenance</td>
+                                <td class="font-semibold p-2 border border-gray-700">Project Type</td>
+                                <td class="p-2 border border-gray-700">Operation & Maintenance</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Start Date</td>
-                                <td class="p-2 border">-</td>
+                                <td class="font-semibold p-2 border border-gray-700">Start Date</td>
+                                <td class="p-2 border border-gray-700">-</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">End Date</td>
-                                <td class="p-2 border">-</td>
+                                <td class="font-semibold p-2 border border-gray-700">End Date</td>
+                                <td class="p-2 border border-gray-700">-</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Weekly Period Start Day</td>
-                                <td class="p-2 border">MONDAY</td>
+                                <td class="font-semibold p-2 border border-gray-700">Weekly Period Start Day</td>
+                                <td class="p-2 border border-gray-700">MONDAY</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold p-2 border">Employees With Access</td>
-                                <td class="p-2 border">-</td>
+                                <td class="font-semibold p-2 border border-gray-700">Employees With Access</td>
+                                <td class="p-2 border border-gray-700">-</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="mt-4">
                     <div class="flex justify-between items-center">
-                        <h2 class="text-lg font-semibold">Employees</h2>
-                        <button class="bg-blue-500 text-white px-4 py-2 rounded">Add Employee</button>
+                        <h2 class="text-lg font-semibold text-gray-200">Employees</h2>
+                        <button
+                            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition duration-300">Add
+                            Employee</button>
                     </div>
-                    <hr class="my-2">
-                    <p>No Employees</p>
-
+                    <hr class="my-2 border-gray-700">
+                    <p class="text-gray-400">No Employees</p>
                 </div>
             </div>
         </section>
-
     </div>
 </body>
 
